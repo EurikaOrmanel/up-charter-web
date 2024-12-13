@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Up-charter is a side project which I am building, with the intent of charting local songs (Volta Region,Ghana) based on the number of plays data offered by audiomack via an unofficial [Audiomack API](https://audiomack.com).  The backend repo: [Up-charting](https://github.com/EurikaOrmanel/up-charting)
+I have developed a backend which is responsible for periodically fetching the songs in chart's playback counts and then switching their positions accordingly.
+
 
 ## Getting Started
 
@@ -18,7 +20,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
