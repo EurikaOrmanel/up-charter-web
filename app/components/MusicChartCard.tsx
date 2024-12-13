@@ -1,4 +1,4 @@
-import { BarChart3, Heart, PauseCircle, PlayCircle, TrendingDown, TrendingUp } from "lucide-react";
+import { BarChart3, Heart, PauseCircle, PlayCircle, TrendingDown, TrendingUp, Link } from "lucide-react";
 import { SongChart } from "../types/song_chart";
 
 
@@ -38,7 +38,7 @@ export default function MusicChartCard({ position, previous_position, song }: So
                             #{position}
                             <span className={`ml-2 ${rankChange.color} text-sm`}>
                                 <RankIcon size={14} className="inline" />
-                                {rankChange.value}
+                                {/* {rankChange.value} */}
                             </span>
                         </div>
                     </div>
@@ -60,14 +60,14 @@ export default function MusicChartCard({ position, previous_position, song }: So
                     <h3 className="font-bold text-lg mb-1 truncate group-hover:text-pink-400 transition-colors">
                         {song.title}
                     </h3>
-                    <p className="text-white/60 text-sm mb-3 truncate">{song.artist}</p>
+                    <p className="text-white/60 text-sm mb-3 truncate">{song.artist.stagename}</p>
                     <div className="flex justify-between items-center">
                         <div className="flex items-center gap-2 text-white/60">
                             <BarChart3 size={16} />
                             {/* <span>{formatNumber(track.streams)}</span> */}
                         </div>
                         <div className="flex items-center gap-2 text-white/60">
-                            <Heart size={16} className="text-pink-400" />
+                            <Link size={16} className="text-pink-400" />
                             {/* <span>{formatNumber(track.likes)}</span> */}
                         </div>
                     </div>

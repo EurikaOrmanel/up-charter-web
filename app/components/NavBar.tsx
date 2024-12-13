@@ -8,7 +8,7 @@ export default function NavBar() {
                 <div className="flex justify-between items-center">
                     <div className="flex items-center gap-4">
                         <Music2 size={32} className="text-pink-500" />
-                        <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        <h1 className="md:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                             Up-charter
                         </h1>
                     </div>

@@ -7,13 +7,12 @@ export default function Home() {
   const { data, errMsg, status, load } = useSongChart();
   useEffect(() => {
     load()
-    console.log("auasdkjavlsdkjvalsdkjvasdv")
   }, [load])
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-max">
+      <div className="grid grid-cols-2 px-4 md:grid-cols-3 lg:grid-cols-6 gap-6 auto-rows-max">
         {
-          data?.map(e => <MusicChartCard {...e} />)
+          data?.map(e => <MusicChartCard {...e} key={e.id} />)
         }
 
       </div>

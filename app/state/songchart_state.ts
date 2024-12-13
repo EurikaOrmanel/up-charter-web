@@ -13,7 +13,6 @@ export const useSongChart = create<SongChartState>((set) => ({
     load: async () => {
         set({ status: ActionStatus.loading })
         try {
-            console.log(`${process.env.NEXT_PUBLIC_API_BASE_URL}/v1/visitor/chrts/sngs/tp100`)
             const result = await axios.get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/v1/visitor/chrts/sngs/tp100`)
             if (result.status == 200) {
                 const data: SongChart[] = result.data
