@@ -4,7 +4,7 @@ import { useSongChart } from "./state/songchart_state";
 import MusicChartCard from "./components/MusicChartCard";
 
 export default function Home() {
-  const { data, errMsg, status, load } = useSongChart();
+  const { data, load } = useSongChart();
   useEffect(() => {
     load()
   }, [load])

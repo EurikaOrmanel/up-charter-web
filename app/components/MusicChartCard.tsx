@@ -1,14 +1,15 @@
-import { BarChart3, Heart, PauseCircle, PlayCircle, TrendingDown, TrendingUp, Link } from "lucide-react";
+import { BarChart3,  TrendingDown, TrendingUp, Link } from "lucide-react";
 import { SongChart } from "../types/song_chart";
+import Image from "next/image";
 
 
 
-const formatNumber = (num: number) => {
-    return new Intl.NumberFormat('en-US', {
-        notation: 'compact',
-        maximumFractionDigits: 1
-    }).format(num);
-};
+// const formatNumber = (num: number) => {
+//     return new Intl.NumberFormat('en-US', {
+//         notation: 'compact',
+//         maximumFractionDigits: 1
+//     }).format(num);
+// };
 const getRankChange = (current: number, previous: number) => {
     const change = previous - current;
 
@@ -45,7 +46,7 @@ export default function MusicChartCard({ position, previous_position, song }: So
                 </div>
                 {/* Album Art */}
                 <div className="relative aspect-square rounded-2xl overflow-hidden mb-4 group">
-                    <img
+                    <Image
                         src={song.cover}
                         alt={song.title}
                         className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
